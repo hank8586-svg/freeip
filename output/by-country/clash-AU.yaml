@@ -18,17 +18,31 @@ proxies:
     path: /fp=chrome
     headers:
       Host: fs.qicai99.com
+- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
+  type: vless
+  server: 169.40.42.225
+  port: 443
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+  servername: yahoo.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
+  - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
 rules:
 - MATCH,PROXIES
