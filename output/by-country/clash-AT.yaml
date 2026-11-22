@@ -35,7 +35,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  servername: ''
 - name: 🇦🇹 AT 05 - xiaohe
   type: vmess
   server: 154.47.19.225
@@ -46,7 +46,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: xmfhlpy.com
+  servername: 154.47.19.225
 - name: 🇦🇹 AT 06 - xiaohe
   type: vmess
   server: 154.47.19.225
@@ -57,7 +57,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ''
+  servername: xmfhlpy.com
 - name: 🇦🇹 AT 07 - xiaohe
   type: vmess
   server: 154.47.19.225
