@@ -58,6 +58,28 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: ''
+- name: 🇦🇹 AT 07 - xiaohe
+  type: vmess
+  server: 154.47.19.225
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
+- name: 🇦🇹 AT 08 - xiaohe
+  type: vmess
+  server: 154.47.19.225
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +91,8 @@ proxy-groups:
   - 🇦🇹 AT 04 - xiaohe
   - 🇦🇹 AT 05 - xiaohe
   - 🇦🇹 AT 06 - xiaohe
+  - 🇦🇹 AT 07 - xiaohe
+  - 🇦🇹 AT 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -80,5 +104,7 @@ proxy-groups:
   - 🇦🇹 AT 04 - xiaohe
   - 🇦🇹 AT 05 - xiaohe
   - 🇦🇹 AT 06 - xiaohe
+  - 🇦🇹 AT 07 - xiaohe
+  - 🇦🇹 AT 08 - xiaohe
 rules:
 - MATCH,PROXIES
